@@ -1,0 +1,22 @@
+/*
+1) How to declare a variable?
+2) What are build in Data Types in Dart?
+3) What are literals?
+4) String Interpolation
+5) Constants in Dart
+	- final keyword
+	- const keyword
+*/
+/*
+-> Dart has special support for these data types
+	- Number (int, double)
+->Strings
+->Booleans
+->Lists (also known as array)
+->maps
+->Runes
+->Symbols
+
+NOTE: All data types in Dart are Objects
+Therefore, values are by default null
+*/

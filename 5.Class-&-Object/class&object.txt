@@ -1,0 +1,14 @@
+/*
+ * Class & Objects
+ * Instance Variable or Field Variables
+ * Functions in a class
+ * Constructors
+ * - Default
+ * - Parameterized
+ * - Named
+ * Properties of Constructor
+ * - Used to create Objects
+ * - You can initialize your instance or field variables within Constructors
+ * - You cannot have both default and parameterized Constructors at the same time
+ * - You can have as many Named Constructr as you want
+ * */
