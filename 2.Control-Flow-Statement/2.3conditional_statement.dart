@@ -4,15 +4,14 @@
  * Conditional  Statements
  * Switch Case Statement
  * */
-void main ()
-{ 
+void main() {
   //Conditional Statement
   /*
    * Case I
    * val = condition ? exp1 : exp2 ;
    * */
-  int a =2, b=3;
-  if(a<b)
+  int a = 2, b = 3;
+  if (a < b)
     print("$a is smaller than $b");
   else
     print("$b is smaller than $a");
@@ -23,7 +22,7 @@ void main ()
    * Case II
    * value = exp1 ?? exp2 ;
    * */
-  String name;
+  String? name;
   String nameToPrint = name ?? "Guest User";
   print(nameToPrint);
 }

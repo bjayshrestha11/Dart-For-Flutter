@@ -11,13 +11,11 @@
  * */
 
 void main() {
-  
-  myCountries("Nepal","USA","Australia");
-  myCountries("China","India");//It also works
-  
+  myCountries("Nepal", "USA", "Australia");
+  myCountries("China", "India"); //It also works
 }
 
 //Optional Positional Parameters
-void myCountries (String s1, [String s2, String s3]){
+void myCountries(String s1, [String? s2, String? s3]) {
   print("My countries are $s1 , $s2 & $s3");
 }
