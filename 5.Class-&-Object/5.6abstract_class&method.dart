@@ -8,21 +8,23 @@
  * - it can have Abstract methods, Normal Methods and instance variables as well
  * - it cannot be instantiated, you cannot create objects
  */
-void main (){
-  var rect = Rectangle() , cir = Circle(); 
+void main() {
+  var rect = Rectangle(), cir = Circle();
   rect.draw();
   cir.draw();
 }
-abstract class Shape{
-  int l;
-  int b;
+
+abstract class Shape {
+  int? l;
+  int? b;
   void draw();
-  void myShape(){ 
-  }
+  void myShape() {}
 }
-class Rectangle extends Shape{
+
+class Rectangle extends Shape {
   void draw() => print("Draw Rectangle");
 }
-class Circle extends Shape{
+
+class Circle extends Shape {
   void draw() => print("Draw Circle");
 }

@@ -1,4 +1,6 @@
 //Loop Control Statements
+// ignore_for_file: unused_label
+
 /*
  * For Loop 
  * While Loop
@@ -7,17 +9,15 @@
  * use of labels
  * */
 
-void main ()
-{
-  
+void main() {
   //Use of labels
   print("Use of Label in loop");
-  myOuterLoop: for(var i=0;i<4;i++){
-    myInnerLoop: for (var j=0; j<3;j++){
-      if(i==3 && j==0)
-        break myOuterLoop;
+  myOuterLoop:
+  for (var i = 0; i < 4; i++) {
+    myInnerLoop:
+    for (var j = 0; j < 3; j++) {
+      if (i == 3 && j == 0) break myOuterLoop;
       print("i $i j $j");
     }
   }
-  
 }

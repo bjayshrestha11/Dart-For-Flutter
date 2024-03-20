@@ -16,46 +16,48 @@
  * - Cleaner code: no repetition
  * */
 
-void main (){
+void main() {
   print("Dog");
   var dog = Dog();
   dog.breed = "Labrador";
   dog.color = "White";
   print("The Breed of dog is ${dog.breed}"
-        " with color ${dog.color}" );
+      " with color ${dog.color}");
   dog.bark();
   dog.eat();
-  
+
   print("Cat");
   var cat = Cat();
   cat.age = 5;
   cat.color = "White";
-  print("The age of cat is ${cat.age}"" with color ${cat.color}");
+  print("The age of cat is ${cat.age}" " with color ${cat.color}");
   cat.meow();
   cat.eat();
-  
+
   print("Animal");
   var anim = Animal();
   anim.color = "Black";
   print("The color of animal is ${anim.color}");
   anim.eat();
-  
 }
-class Animal{
-  String color;
-  void eat(){
+
+class Animal {
+  String? color;
+  void eat() {
     print("Eat !");
   }
 }
-class Dog extends Animal{
-  String breed;
-  void bark(){
+
+class Dog extends Animal {
+  String? breed;
+  void bark() {
     print("Bark !!");
   }
 }
-class Cat extends Animal{
-  int age;
-  void meow(){
+
+class Cat extends Animal {
+  int? age;
+  void meow() {
     print("Meow !!");
   }
 }

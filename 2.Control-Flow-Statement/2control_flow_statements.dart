@@ -4,58 +4,56 @@
  * Conditional  Statements
  * Switch Case Statement
  * */
-void main ()
-{
-  
+void main() {
   //IF and Else Statement
   var salary = 25000;
-  if(salary>20000){
+  if (salary > 20000) {
     print("Congratulation, you got promotion");
   } else {
     print("You need to work hard");
   }
-  
+
   //If else If ladder statement
   var age = 101;
-  
-  if(age >=0 && age <= 16){
+
+  if (age >= 0 && age <= 16) {
     print("Child");
-  } else if(age >=16 && age <= 40){
+  } else if (age >= 16 && age <= 40) {
     print("Young");
-  } else if(age >=40 && age <= 100){
+  } else if (age >= 40 && age <= 100) {
     print("Old");
-  } else if(age >=100 && age <= 120){
+  } else if (age >= 100 && age <= 120) {
     print("Going to Die");
-  }else {
+  } else {
     print("You are dead");
   }
-  
+
   //Conditional Statement
   /*
    * Case I
    * val = condition ? exp1 : exp2 ;
    * */
-  int a =2;
-  int b=3;
-  if(a<b)
+  int a = 2;
+  int b = 3;
+  if (a < b)
     print("$a is smaller than $b");
   else
     print("$b is smaller than $a");
   //Equivalent to
   int small = a < b ? a : b;
   print("Smaller value between $a and $b is $small.");
-  
+
   /*
    * Case II
    * value = exp1 ?? exp2 ;
    * */
-  String name;
+  String? name;
   String nameToPrint = name ?? "Guest User";
   print(nameToPrint);
-  
+
   //Switch Case Statement
   String grade = "A";
-  switch (grade){
+  switch (grade) {
     case 'A':
       print("Excellent grade of A");
       break;
@@ -71,5 +69,4 @@ void main ()
     default:
       print("Invalid grade");
   }
-    
 }

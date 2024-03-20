@@ -1,6 +1,6 @@
-void main(){
+void main() {
   //Growable list
-  List<int> numList = List();
+  List<int> numList = [];
   //Adding values to list
   numList.add(5);
   numList.add(15);
@@ -8,7 +8,7 @@ void main(){
   numList.add(35);
   //OR List<num> numList = [5,15,25,35];
   //Index:      0 1   2   3
-  //Elements:   5 15  25  35 
+  //Elements:   5 15  25  35
   print("\n");
   numList.forEach((element) => print(element));
   //Adding 45 into the list
